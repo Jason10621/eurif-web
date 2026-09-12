@@ -1,0 +1,29 @@
+{
+  "name": "EURIF 팀 워크스페이스",
+  "short_name": "EURIF",
+  "description": "다학제 융합 연구 동아리 EURIF — 수면 위상 지연 예측 모형 프로젝트 협업 공간",
+  "lang": "ko",
+  "dir": "ltr",
+  "start_url": "/dashboard",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#0d0d0d",
+  "theme_color": "#2a78d6",
+  "categories": ["productivity", "education"],
+  "icons": [
+    { "src": "/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "/icon-512.png", "sizes": "512x512", "type": "image/png" },
+    {
+      "src": "/icon-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "shortcuts": [
+    { "name": "팀 대시보드", "url": "/dashboard" },
+    { "name": "개인 워크스페이스", "url": "/workspace" },
+    { "name": "EURIF AI", "url": "/ai" }
+  ]
+}

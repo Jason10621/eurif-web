@@ -1,0 +1,230 @@
+@import "tailwindcss";
+
+/* ============================================================
+   EURIF theme tokens — validated dataviz reference palette
+   (warm neutral + blue accent; light + selected dark)
+   ============================================================ */
+:root {
+  --bg: #f9f9f7;
+  --surface: #fcfcfb;
+  --surface-2: #f1f1ee;
+  --surface-3: #e8e8e4;
+  --border: rgba(11, 11, 11, 0.1);
+  --border-strong: rgba(11, 11, 11, 0.16);
+  --text: #0b0b0b;
+  --text-secondary: #52514e;
+  --muted: #898781;
+  --grid: #e1e0d9;
+
+  --primary: #2a78d6;
+  --primary-hover: #256abf;
+  --primary-fg: #ffffff;
+  --primary-soft: #eaf1fb;
+
+  /* categorical chart slots */
+  --chart-1: #2a78d6; /* blue   — 블루라이트 */
+  --chart-2: #eb6834; /* orange — 카페인 */
+  --chart-3: #1baf7a; /* aqua   — 수면 부채 */
+  --chart-4: #eda100; /* yellow */
+  --chart-5: #e87ba4; /* magenta */
+  --chart-6: #4a3aa7; /* violet */
+
+  /* status */
+  --status-done: #0ca30c;
+  --status-active: #2a78d6;
+  --status-planned: #898781;
+  --status-warning: #fab219;
+  --status-critical: #d03b3b;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0d0d0d;
+    --surface: #1a1a19;
+    --surface-2: #232322;
+    --surface-3: #2c2c2a;
+    --border: rgba(255, 255, 255, 0.1);
+    --border-strong: rgba(255, 255, 255, 0.18);
+    --text: #ffffff;
+    --text-secondary: #c3c2b7;
+    --muted: #898781;
+    --grid: #2c2c2a;
+
+    --primary: #3987e5;
+    --primary-hover: #5598e7;
+    --primary-fg: #ffffff;
+    --primary-soft: #17263a;
+
+    --chart-1: #3987e5;
+    --chart-2: #d95926;
+    --chart-3: #199e70;
+    --chart-4: #c98500;
+    --chart-5: #d55181;
+    --chart-6: #9085e9;
+
+    --status-done: #0ca30c;
+    --status-active: #3987e5;
+    --status-planned: #898781;
+    --status-warning: #fab219;
+    --status-critical: #e66767;
+  }
+}
+
+@theme inline {
+  --color-bg: var(--bg);
+  --color-surface: var(--surface);
+  --color-surface-2: var(--surface-2);
+  --color-surface-3: var(--surface-3);
+  --color-border: var(--border);
+  --color-border-strong: var(--border-strong);
+  --color-text: var(--text);
+  --color-text-secondary: var(--text-secondary);
+  --color-muted: var(--muted);
+  --color-grid: var(--grid);
+  --color-primary: var(--primary);
+  --color-primary-hover: var(--primary-hover);
+  --color-primary-fg: var(--primary-fg);
+  --color-primary-soft: var(--primary-soft);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-status-done: var(--status-done);
+  --color-status-active: var(--status-active);
+  --color-status-planned: var(--status-planned);
+  --color-status-warning: var(--status-warning);
+  --color-status-critical: var(--status-critical);
+
+  --font-sans: var(--font-noto-kr), ui-sans-serif, system-ui, -apple-system, "Segoe UI",
+    "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
+}
+
+* {
+  border-color: var(--border);
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  min-height: 100%;
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+/* Recharts polish */
+.recharts-cartesian-grid line {
+  stroke: var(--grid);
+}
+.recharts-text {
+  fill: var(--muted);
+}
+.recharts-default-tooltip {
+  background: var(--surface) !important;
+  border: 1px solid var(--border-strong) !important;
+  border-radius: 0.5rem !important;
+  color: var(--text) !important;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+.recharts-tooltip-item {
+  color: var(--text-secondary) !important;
+}
+
+::selection {
+  background: var(--primary);
+  color: var(--primary-fg);
+}
+
+/* Markdown answers (EURIF AI) */
+.prose-eurif {
+  line-height: 1.65;
+  word-break: break-word;
+}
+.prose-eurif > *:first-child {
+  margin-top: 0;
+}
+.prose-eurif > *:last-child {
+  margin-bottom: 0;
+}
+.prose-eurif p {
+  margin: 0.5rem 0;
+}
+.prose-eurif h1,
+.prose-eurif h2,
+.prose-eurif h3 {
+  margin: 1rem 0 0.4rem;
+  font-weight: 700;
+  line-height: 1.3;
+}
+.prose-eurif h1 {
+  font-size: 1.05rem;
+}
+.prose-eurif h2 {
+  font-size: 1rem;
+}
+.prose-eurif h3 {
+  font-size: 0.9rem;
+}
+.prose-eurif ul,
+.prose-eurif ol {
+  margin: 0.5rem 0;
+  padding-left: 1.25rem;
+}
+.prose-eurif li {
+  margin: 0.2rem 0;
+}
+.prose-eurif ul {
+  list-style: disc;
+}
+.prose-eurif ol {
+  list-style: decimal;
+}
+.prose-eurif strong {
+  font-weight: 700;
+}
+.prose-eurif code {
+  background: var(--surface-3);
+  border-radius: 0.3rem;
+  padding: 0.1em 0.35em;
+  font-size: 0.85em;
+}
+.prose-eurif pre {
+  background: var(--surface-3);
+  border-radius: 0.6rem;
+  padding: 0.75rem;
+  overflow-x: auto;
+  margin: 0.6rem 0;
+}
+.prose-eurif pre code {
+  background: transparent;
+  padding: 0;
+}
+.prose-eurif table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0.6rem 0;
+  font-size: 0.85em;
+}
+.prose-eurif th,
+.prose-eurif td {
+  border: 1px solid var(--border-strong);
+  padding: 0.3rem 0.5rem;
+  text-align: left;
+}
+.prose-eurif th {
+  background: var(--surface-3);
+  font-weight: 600;
+}
+.prose-eurif a {
+  color: var(--primary);
+  text-decoration: underline;
+}
+.prose-eurif blockquote {
+  border-left: 3px solid var(--border-strong);
+  padding-left: 0.75rem;
+  color: var(--text-secondary);
+  margin: 0.5rem 0;
+}
