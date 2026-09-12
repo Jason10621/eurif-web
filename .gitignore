@@ -1,5 +1,6 @@
 .vercel
 .env*
+supabase/.temp/
 
 # Node / Next.js
 node_modules/
