@@ -1,5 +1,5 @@
 /**
- * EURIF PWA 아이콘 생성.  실행:  node scripts/gen-icons.mjs
+ * ULIF PWA 아이콘 생성.  실행:  node scripts/gen-icons.mjs
  * → public/{icon-192,icon-512,icon-maskable-512,apple-touch-icon}.png + favicon
  */
 import sharp from "sharp";

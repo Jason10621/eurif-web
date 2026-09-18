@@ -1,5 +1,5 @@
-/* EURIF service worker — installability + light static caching + offline fallback */
-const CACHE = "eurif-v1";
+/* ULIF service worker — installability + light static caching + offline fallback */
+const CACHE = "ulif-v1";
 const OFFLINE_URL = "/offline.html";
 
 self.addEventListener("install", (event) => {
@@ -54,15 +54,15 @@ self.addEventListener("push", (event) => {
   try {
     data = event.data ? event.data.json() : {};
   } catch {
-    data = { title: "EURIF", body: event.data ? event.data.text() : "" };
+    data = { title: "ULIF", body: event.data ? event.data.text() : "" };
   }
-  const title = data.title || "EURIF";
+  const title = data.title || "ULIF";
   event.waitUntil(
     self.registration.showNotification(title, {
       body: data.body || "",
       icon: "/icon-192.png",
       badge: "/icon-192.png",
-      tag: data.tag || "eurif",
+      tag: data.tag || "ulif",
       data: { url: data.url || "/dashboard" },
     }),
   );

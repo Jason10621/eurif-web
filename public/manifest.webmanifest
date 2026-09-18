@@ -1,7 +1,7 @@
 {
-  "name": "EURIF 팀 워크스페이스",
-  "short_name": "EURIF",
-  "description": "다학제 융합 연구 동아리 EURIF — 수면 위상 지연 예측 모형 프로젝트 협업 공간",
+  "name": "ULIF 팀 워크스페이스",
+  "short_name": "ULIF",
+  "description": "다학제 융합 연구 동아리 ULIF — 수면 위상 지연 예측 모형 프로젝트 협업 공간",
   "lang": "ko",
   "dir": "ltr",
   "start_url": "/dashboard",
@@ -24,6 +24,6 @@
   "shortcuts": [
     { "name": "팀 대시보드", "url": "/dashboard" },
     { "name": "개인 워크스페이스", "url": "/workspace" },
-    { "name": "EURIF AI", "url": "/ai" }
+    { "name": "ULIF AI", "url": "/ai" }
   ]
 }

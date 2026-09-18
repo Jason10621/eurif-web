@@ -45,7 +45,7 @@ export function ChatThread({
               ) : (
                 <div
                   className={cn(
-                    "prose-eurif max-w-none rounded-2xl rounded-tl-sm bg-surface-2 px-3.5 py-2.5",
+                    "prose-ulif max-w-none rounded-2xl rounded-tl-sm bg-surface-2 px-3.5 py-2.5",
                   )}
                 >
                   <ReactMarkdown remarkPlugins={[remarkGfm]}>

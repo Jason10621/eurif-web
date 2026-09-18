@@ -13,17 +13,17 @@ const notoSansKR = Noto_Sans_KR({
 
 export const metadata: Metadata = {
   title: {
-    default: "EURIF · 팀 워크스페이스",
-    template: "%s · EURIF",
+    default: "ULIF · 팀 워크스페이스",
+    template: "%s · ULIF",
   },
   description:
-    "다학제 융합 연구 동아리 EURIF — 수면 위상 지연 다중변수 예측 모형 프로젝트 협업 공간",
-  applicationName: "EURIF",
+    "다학제 융합 연구 동아리 ULIF — 수면 위상 지연 다중변수 예측 모형 프로젝트 협업 공간",
+  applicationName: "ULIF",
   manifest: "/manifest.webmanifest",
   appleWebApp: {
     capable: true,
     statusBarStyle: "default",
-    title: "EURIF",
+    title: "ULIF",
   },
   icons: {
     icon: [

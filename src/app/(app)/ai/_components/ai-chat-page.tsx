@@ -84,7 +84,7 @@ export function AiChatPage({
               <span className="mb-4 flex h-12 w-12 items-center justify-center rounded-2xl bg-primary text-primary-fg">
                 <Bot className="h-6 w-6" />
               </span>
-              <h2 className="text-lg font-bold">EURIF AI</h2>
+              <h2 className="text-lg font-bold">ULIF AI</h2>
               <p className="mt-1.5 text-sm text-muted">
                 유리프 폴더의 자료(실험계획서, 5인 자료조사, 활동보고서, 진행 방향)를 학습한
                 맞춤형 연구 도우미입니다. 배경 이론·수식·다음 단계 무엇이든 물어보세요.

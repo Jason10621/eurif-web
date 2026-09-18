@@ -5,7 +5,7 @@ import { Megaphone, Pin, X } from "lucide-react";
 import { fmtRelative } from "@/lib/utils";
 import type { Announcement } from "@/lib/types";
 
-const KEY = "eurif-dismissed-announcements";
+const KEY = "ulif-dismissed-announcements";
 
 export function AnnouncementBanner({ announcements }: { announcements: Announcement[] }) {
   const [dismissed, setDismissed] = useState<string[]>([]);

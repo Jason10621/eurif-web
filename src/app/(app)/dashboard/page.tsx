@@ -46,7 +46,7 @@ export default async function DashboardPage() {
   return (
     <>
       <PageHeader
-        title={project?.title ?? "EURIF 팀 대시보드"}
+        title={project?.title ?? "ULIF 팀 대시보드"}
         desc={project?.subtitle ?? undefined}
       />
 

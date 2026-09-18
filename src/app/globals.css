@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 /* ============================================================
-   EURIF theme tokens — validated dataviz reference palette
+   ULIF theme tokens — validated dataviz reference palette
    (warm neutral + blue accent; light + selected dark)
    ============================================================ */
 :root {
@@ -138,91 +138,91 @@ body {
   color: var(--primary-fg);
 }
 
-/* Markdown answers (EURIF AI) */
-.prose-eurif {
+/* Markdown answers (ULIF AI) */
+.prose-ulif {
   line-height: 1.65;
   word-break: break-word;
 }
-.prose-eurif > *:first-child {
+.prose-ulif > *:first-child {
   margin-top: 0;
 }
-.prose-eurif > *:last-child {
+.prose-ulif > *:last-child {
   margin-bottom: 0;
 }
-.prose-eurif p {
+.prose-ulif p {
   margin: 0.5rem 0;
 }
-.prose-eurif h1,
-.prose-eurif h2,
-.prose-eurif h3 {
+.prose-ulif h1,
+.prose-ulif h2,
+.prose-ulif h3 {
   margin: 1rem 0 0.4rem;
   font-weight: 700;
   line-height: 1.3;
 }
-.prose-eurif h1 {
+.prose-ulif h1 {
   font-size: 1.05rem;
 }
-.prose-eurif h2 {
+.prose-ulif h2 {
   font-size: 1rem;
 }
-.prose-eurif h3 {
+.prose-ulif h3 {
   font-size: 0.9rem;
 }
-.prose-eurif ul,
-.prose-eurif ol {
+.prose-ulif ul,
+.prose-ulif ol {
   margin: 0.5rem 0;
   padding-left: 1.25rem;
 }
-.prose-eurif li {
+.prose-ulif li {
   margin: 0.2rem 0;
 }
-.prose-eurif ul {
+.prose-ulif ul {
   list-style: disc;
 }
-.prose-eurif ol {
+.prose-ulif ol {
   list-style: decimal;
 }
-.prose-eurif strong {
+.prose-ulif strong {
   font-weight: 700;
 }
-.prose-eurif code {
+.prose-ulif code {
   background: var(--surface-3);
   border-radius: 0.3rem;
   padding: 0.1em 0.35em;
   font-size: 0.85em;
 }
-.prose-eurif pre {
+.prose-ulif pre {
   background: var(--surface-3);
   border-radius: 0.6rem;
   padding: 0.75rem;
   overflow-x: auto;
   margin: 0.6rem 0;
 }
-.prose-eurif pre code {
+.prose-ulif pre code {
   background: transparent;
   padding: 0;
 }
-.prose-eurif table {
+.prose-ulif table {
   width: 100%;
   border-collapse: collapse;
   margin: 0.6rem 0;
   font-size: 0.85em;
 }
-.prose-eurif th,
-.prose-eurif td {
+.prose-ulif th,
+.prose-ulif td {
   border: 1px solid var(--border-strong);
   padding: 0.3rem 0.5rem;
   text-align: left;
 }
-.prose-eurif th {
+.prose-ulif th {
   background: var(--surface-3);
   font-weight: 600;
 }
-.prose-eurif a {
+.prose-ulif a {
   color: var(--primary);
   text-decoration: underline;
 }
-.prose-eurif blockquote {
+.prose-ulif blockquote {
   border-left: 3px solid var(--border-strong);
   padding-left: 0.75rem;
   color: var(--text-secondary);

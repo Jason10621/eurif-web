@@ -55,7 +55,7 @@ export function KnowledgeManager({ docs, aiConfigured }: { docs: DocRow[]; aiCon
   return (
     <Card>
       <CardHeader
-        title="EURIF AI 지식베이스"
+        title="ULIF AI 지식베이스"
         desc={`${docs.length}개 문서 · ${totalChunks}개 청크 인덱싱됨`}
       />
 

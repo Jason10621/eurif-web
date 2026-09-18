@@ -4,7 +4,7 @@ import { aiConfigured } from "@/lib/ai/gemini";
 import { getConversations, getConversationMessages } from "@/lib/ai/conversations";
 import { AiChatPage } from "./_components/ai-chat-page";
 
-export const metadata = { title: "EURIF AI" };
+export const metadata = { title: "ULIF AI" };
 
 export default async function AiPage({
   searchParams,
@@ -22,7 +22,7 @@ export default async function AiPage({
   return (
     <>
       <PageHeader
-        title="EURIF AI"
+        title="ULIF AI"
         desc="프로젝트 자료를 학습한 맞춤형 연구 도우미"
       />
       <AiChatPage

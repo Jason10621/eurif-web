@@ -44,7 +44,7 @@ function LoginForm() {
         <div className="mb-4 flex h-14 w-14 items-center justify-center rounded-2xl bg-primary text-primary-fg shadow-lg shadow-primary/25">
           <MoonStar className="h-7 w-7" />
         </div>
-        <h1 className="text-2xl font-bold tracking-tight">EURIF</h1>
+        <h1 className="text-2xl font-bold tracking-tight">ULIF</h1>
         <p className="mt-1 text-sm text-muted">
           다학제 융합 연구 동아리 · 팀 워크스페이스
         </p>

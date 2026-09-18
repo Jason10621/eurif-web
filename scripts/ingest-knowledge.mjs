@@ -1,5 +1,5 @@
 /**
- * EURIF AI 지식베이스 인제스트 (로컬 실행)
+ * ULIF AI 지식베이스 인제스트 (로컬 실행)
  *
  *   knowledge/*.md  →  청크 분할  →  Gemini 임베딩(768d)  →  Supabase document_chunks
  *

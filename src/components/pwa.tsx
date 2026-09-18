@@ -8,7 +8,7 @@ interface BIPEvent extends Event {
   userChoice: Promise<{ outcome: "accepted" | "dismissed" }>;
 }
 
-const DISMISS_KEY = "eurif-install-dismissed";
+const DISMISS_KEY = "ulif-install-dismissed";
 
 export function Pwa() {
   const [deferred, setDeferred] = useState<BIPEvent | null>(null);
@@ -82,7 +82,7 @@ export function Pwa() {
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img src="/icon-192.png" alt="" className="h-10 w-10 rounded-xl" />
         <div className="min-w-0 flex-1">
-          <p className="text-sm font-semibold">EURIF 앱 설치</p>
+          <p className="text-sm font-semibold">ULIF 앱 설치</p>
           {deferred ? (
             <>
               <p className="mt-1 text-xs text-text-secondary">

@@ -49,7 +49,7 @@ export async function POST(req: Request) {
     title: n.title,
     body: n.body ?? "",
     url: n.link ?? "/dashboard",
-    tag: `eurif-${n.type}`,
+    tag: `ulif-${n.type}`,
   });
 
   let sent = 0;

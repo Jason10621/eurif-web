@@ -33,7 +33,7 @@ export async function POST(req: Request) {
 
   if (!aiConfigured()) {
     return Response.json(
-      { error: "EURIF AI 가 아직 설정되지 않았습니다. (관리자에게 Gemini API 키 등록 요청)" },
+      { error: "ULIF AI 가 아직 설정되지 않았습니다. (관리자에게 Gemini API 키 등록 요청)" },
       { status: 503 },
     );
   }

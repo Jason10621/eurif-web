@@ -7,7 +7,7 @@ import { cn } from "@/lib/utils";
 export function ChatInput({
   onSend,
   disabled,
-  placeholder = "EURIF 프로젝트에 대해 무엇이든 물어보세요…",
+  placeholder = "ULIF 프로젝트에 대해 무엇이든 물어보세요…",
 }: {
   onSend: (text: string) => void;
   disabled?: boolean;

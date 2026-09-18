@@ -23,7 +23,7 @@ const NAV = [
   { href: "/dashboard", label: "팀 대시보드", icon: LayoutDashboard },
   { href: "/workspace", label: "개인 워크스페이스", icon: UserRound },
   { href: "/resources", label: "자료실", icon: FolderOpen },
-  { href: "/ai", label: "EURIF AI", icon: Bot },
+  { href: "/ai", label: "ULIF AI", icon: Bot },
 ];
 
 export function AppNav({
@@ -125,7 +125,7 @@ export function AppNav({
       <header className="sticky top-0 z-30 flex items-center justify-between border-b border-border bg-surface/80 px-4 py-3 pt-[calc(0.75rem+env(safe-area-inset-top))] backdrop-blur md:hidden">
         <Link href="/dashboard" className="flex items-center gap-2 font-bold">
           <MoonStar className="h-5 w-5 text-primary" />
-          EURIF
+          ULIF
         </Link>
         <div className="flex items-center gap-1">
           <NotificationBell
@@ -159,7 +159,7 @@ export function AppNav({
                 onClick={() => setOpen(false)}
               >
                 <MoonStar className="h-5 w-5 text-primary" />
-                EURIF
+                ULIF
               </Link>
               <button
                 onClick={() => setOpen(false)}
@@ -185,7 +185,7 @@ export function AppNav({
             <span className="flex h-8 w-8 items-center justify-center rounded-lg bg-primary text-primary-fg">
               <MoonStar className="h-4 w-4" />
             </span>
-            EURIF
+            ULIF
           </Link>
           <NotificationBell
             userId={profile.id}

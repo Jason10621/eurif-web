@@ -23,7 +23,7 @@ export function AiWidget() {
       {!open && (
         <button
           onClick={() => setOpen(true)}
-          aria-label="EURIF AI 열기"
+          aria-label="ULIF AI 열기"
           className="fixed bottom-[calc(1.25rem+env(safe-area-inset-bottom))] right-5 z-40 flex h-14 w-14 items-center justify-center rounded-full bg-primary text-primary-fg shadow-lg shadow-primary/30 transition hover:scale-105 active:scale-95"
         >
           <Bot className="h-6 w-6" />
@@ -38,7 +38,7 @@ export function AiWidget() {
                 <Bot className="h-4 w-4" />
               </span>
               <div>
-                <p className="text-sm font-semibold leading-none">EURIF AI</p>
+                <p className="text-sm font-semibold leading-none">ULIF AI</p>
                 <p className="mt-0.5 text-[11px] text-muted">프로젝트 자료 기반 답변</p>
               </div>
             </div>
@@ -74,7 +74,7 @@ export function AiWidget() {
             {messages.length === 0 ? (
               <div className="flex h-full flex-col items-center justify-center px-3 text-center">
                 <Sparkles className="mb-3 h-7 w-7 text-primary" />
-                <p className="text-sm font-medium">EURIF 전용 연구 도우미</p>
+                <p className="text-sm font-medium">ULIF 전용 연구 도우미</p>
                 <p className="mt-1 text-xs text-muted">
                   유리프 자료(실험계획서·자료조사·활동보고서)를 학습했습니다.
                 </p>
